@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+    <title>YouTabs popup page</title>
+    <style type="text/css">
+        body {
+            background-color: #d7edff;
+        }
+
+        .btn {
+            background-color: #51B3F8; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+
+            .btn:hover {
+                background-color: #78C6FC;
+            }
+
+        input {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 375px;
+            display: block;
+            border: 1px solid #51B3F8;
+            height: 25px;
+            -webkit-box-shadow: 0px 0px 8px #78C6FC;
+            -moz-box-shadow: 0px 0px 8px #78C6FC;
+            box-shadow: 0px 0px 8px #78C6FC;
+        }
+
+        .big-text {
+            font-size: 16px;
+        }
+    </style>
+    <script src="popup.js"></script>
+</head>
+<body>
+    <div id="main-section">
+        <form>
+            <table>
+                <tr>
+                    <td colspan="2"><label for="email-address-value" class="big-text">Your email address:</label></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="text" id="email-textbox" name="email-address-value" placeholder="Not found" readonly /></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><span class="big-text">Version: 1.1</span></td>
+                    <td align="right"><button id="copy-btn" class="btn">Copy</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
